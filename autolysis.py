@@ -1,3 +1,5 @@
+# Metadata: {"dependencies": ["matplotlib", "pandas", "seaborn", "requests", "chardet"]}
+
 import os
 import sys
 import pandas as pd
@@ -7,8 +9,7 @@ import chardet
 from openai import ChatCompletion
 
 # Step 1: Load the AIPROXY_TOKEN
-AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIyZjIwMDEwNjJAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.VCDzV4cBgQuKEk3BWWEFotvGy2BOrlA3eTtCYMChPWI"
-#AIPROXY_TOKEN = os.getenv("AIPROXY_TOKEN")
+AIPROXY_TOKEN = os.getenv("AIPROXY_TOKEN") or "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIyZjEwMDE4NTNAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.3UAeJMA-I52V2PVe3mGIW4ghug6VzHAJ34xuv2fsK34"
 if not AIPROXY_TOKEN:
     print("Error: AIPROXY_TOKEN is not set.")
     sys.exit(1)
