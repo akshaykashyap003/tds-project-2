@@ -1,4 +1,15 @@
-# Metadata: {"dependencies": ["matplotlib", "pandas", "seaborn", "requests", "chardet"]}
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "chardet",
+#   "pandas",
+#   "seaborn",
+#   "matplotlib",
+#   "ipykernel",
+#   "openai",
+#   "requests",
+# ]
+# ///
 
 import os
 import sys
